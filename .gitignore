@@ -1,0 +1,32 @@
+# 数据集
+data/
+*/rgb/
+*/depth_pfm/
+*/instance_segmentation/
+*/semantic_segmentation/
+*.png
+*.pfm
+*.xlsx
+*.txt
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VSCode 本地设置
+.vscode/
+
+# 模型输出
+logs/
+checkpoints/
+results/
+*.h5
+*.ckpt
+
+# 虚拟环境
+.venv/
+env/
+
