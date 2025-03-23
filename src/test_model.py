@@ -31,7 +31,7 @@ a = tf.convert_to_tensor(A)
 # 2. Build and run model
 model = VQAGATModel(n_classes=n_classes, hidden_dim=F, attn_heads=4)
 output = model([x, a, layout_vector], training=False)
-attn = model.get_attention_weights().numpy()
+attn = model.get_attention_weights()
 
 print("Output shape:", output.shape)
 print("Sample output (softmax):", output.numpy()[0])
